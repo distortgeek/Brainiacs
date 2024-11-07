@@ -1,0 +1,52 @@
+/* Resources Page Specific Styles */
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resource-card {
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.resource-card ul {
+    list-style-type: none;
+}
+
+.resource-card li {
+    margin-bottom: 0.5rem;
+}
+
+.resource-card a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.resource-card a:hover {
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+}

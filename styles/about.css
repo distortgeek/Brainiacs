@@ -1,0 +1,58 @@
+/* About Page Specific Styles */
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 20px;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.about-content p {
+    margin-bottom: 2rem;
+}
+
+.about-content ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
